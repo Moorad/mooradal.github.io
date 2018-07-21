@@ -1,0 +1,172 @@
+
+@font-face {
+	font-family:UniSansHeavyCaps;
+	src:url("Assets/UniSansHeavyCaps.otf");
+}
+
+@font-face {
+	font-family:Potra;
+	src:url("Assets/Potra.ttf");
+}
+body,html {
+	font-family:Noto Sans;
+	margin:0px;
+}
+
+h1 {
+	text-align:center;
+	font-size:100px;
+}
+
+#Landing {
+	overflow:hidden;
+}
+
+ul {
+	list-style-type:none;
+	margin:0px;
+}
+
+#Nav {
+	background:black;
+	position:fixed;
+	width:100%;
+	top:0;
+	color:white;
+	overflow:auto;
+	z-index:5;
+	opacity:0.5;
+	transition:0.5s;
+	transition-timing-function: ease-out;
+}
+
+
+li {
+	float:right;
+	border:1px solid white;
+	padding:10px;
+	display:block;
+	margin:10px 10px;
+	color:white;
+}
+
+li:hover {
+	color:black;
+	background:white;
+	transition:0.4s;
+}
+
+.selected {
+	color:black;
+	background:white;
+}
+
+
+p {
+	font:120% Roboto;
+	margin:0% 10% 0% 10% ;
+}
+
+.headingp1,.headingp2{
+	font-family:UniSansHeavyCaps;
+	position:absolute;
+	display:block;
+	width:50%;
+	left:50%;
+	top:37%;
+	transform: translate(-50%, -50%);
+	opacity:0.6;
+	transition:1s;
+
+}
+
+.headingp2 {
+	top:50%;
+}
+
+.headingp1:hover {
+	opacity:1;
+	transition:1s;
+}
+
+.headingp2:hover {
+	opacity:1;
+	transition:1s;
+}
+
+button {
+	position:absolute;
+	top:80%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	font:150% Roboto;
+	padding:10px 100px;
+	border-radius:30px;
+	border:1.5px solid #191919;
+	background:#1A1A1A;
+	color:white;
+	transition:0.5s;
+	opacity:0.5;
+	outline:none;
+}
+
+button:hover {
+	border-radius:10px;
+	opacity:1;
+	transition:0.5s;
+}
+
+button:active {
+	border:2px solid white;
+}
+
+#image-container {
+	margin:10%;
+}
+
+img {
+	width:100%;
+	border:2px solid black;
+	transition:0.2s;
+}
+
+.image-text {
+	position:relative;
+	display:inline-block;
+	width:47%;
+	margin:1% 1%;
+}
+
+.image-text :not(Img){
+	position:absolute;
+	top:30%;
+	color:white;
+	text-align:center;
+	width:100%;
+	z-index:5;
+	opacity:0;
+}
+
+h3 {
+	font:250% Roboto;
+	transition:0.2s;
+}
+
+.image-text:hover img{
+	filter:brightness(20%);
+    transition:0.2s;
+}
+
+.image-text:hover :not(img) {
+	opacity:1;
+	transition:0.2s;
+}
+
+h2 {
+	font:400% Potra;
+	margin:10% 0% 2% 10%;
+}
+
+#Nav:hover {
+	opacity:1;
+}
