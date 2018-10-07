@@ -30,7 +30,7 @@ h1 {
 
 #Landing {
 	height:100vh;
-	background-image: url("Assets/background4.png");
+	background-image: url("Assets/background4.jpg");
 	background-size:cover;
 	background-position:center;
 }
@@ -127,13 +127,12 @@ ul {
 	z-index:5;
 	transition:0.3s;
 	transition-timing-function: ease-out;
-	box-shadow:0 0 10px white;
 }
 
 li {
 	float:right;
 	border:0px;
-	padding:10px 20px;
+	padding:10px 40px;
 	display:block;
 	margin:10px 10px;
 	color:black;
@@ -143,9 +142,8 @@ li {
 }
 
 li:hover {
-	color:white;
-	background:#121212;
-	transition:0.4s;
+	background:rgb(180, 180, 180);
+	transition:0.2s;
 }
 
 .selected {
