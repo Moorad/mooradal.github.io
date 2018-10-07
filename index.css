@@ -1,3 +1,13 @@
+@keyframes spin1 {
+	from {transform: rotate(0deg);}
+	to {transform:rotate(360deg);;}
+}
+
+@keyframes spin2 {
+	from {transform: rotate(360deg);}
+	to {transform: rotate(0deg);}
+}
+
 
 @font-face {
 	font-family:UniSansHeavyCaps;
@@ -9,7 +19,7 @@
 	src:url("Assets/Potra.ttf");
 }
 body,html {
-	font-family:Noto Sans;
+	font-family:Noto Sans, Arial;
 	margin:0px;
 }
 
@@ -19,7 +29,87 @@ h1 {
 }
 
 #Landing {
-	overflow:hidden;
+	height:100vh;
+	background-image: url("Assets/background4.png");
+	background-size:cover;
+	background-position:center;
+}
+
+.clickable-box {
+	display:inline-block;
+	width:100px;
+	height:100px;
+	margin:50px 20px;
+	border-radius:50%;
+}
+
+#atom, #sublime, #visual, #paint {
+	transition:0.2s;
+}
+
+#atom {
+	margin-left:10%;
+	border:3px solid #4BCB7E;
+	background-color:#0D2214;
+}
+
+#atom img:hover {
+	filter:brightness(0%);
+}
+
+#atom:hover {
+	background-color:#4BCB7E;
+	border:3px solid #0D2214;
+}
+
+
+#sublime {
+	border:3px solid #FD971F;
+	background-color:#242424;
+}
+
+#sublime img:hover {
+	filter:brightness(0%);
+}
+
+#sublime:hover {
+	background-color:#FD971F;
+	border:3px solid #242424;
+	}
+
+#visual {
+	border:3px solid #9305C9;
+	background-color:#19001E;
+}
+
+
+#visual img:hover {
+	filter:brightness(0%);
+}
+
+#visual:hover {
+	background-color:#9305C9;
+	border:3px solid #19001E;
+}
+
+#inkscape {
+	border:3px solid #c0006a;
+	background-color:#162030;
+}
+
+
+#inkscape img:hover {
+	filter:brightness(0%);
+}
+
+#inkscape:hover {
+	background-color:#c0006a;
+	border:3px solid #162030;
+}
+
+
+.clickable-box:hover {
+	transform: scale(0.5L);
 }
 
 ul {
@@ -28,31 +118,33 @@ ul {
 }
 
 #Nav {
-	background:black;
+	background:rgb(255, 255, 255,0);
 	position:fixed;
 	width:100%;
 	top:0;
 	color:white;
 	overflow:auto;
 	z-index:5;
-	opacity:0.5;
-	transition:0.5s;
+	transition:0.3s;
 	transition-timing-function: ease-out;
+	box-shadow:0 0 10px white;
 }
-
 
 li {
 	float:right;
-	border:1px solid white;
-	padding:10px;
+	border:0px;
+	padding:10px 20px;
 	display:block;
 	margin:10px 10px;
-	color:white;
+	color:black;
+	border-radius:50px;
+	box-shadow:0 0 10px rgba(0,0,0,0.8);
+	background:white;
 }
 
 li:hover {
-	color:black;
-	background:white;
+	color:white;
+	background:#121212;
 	transition:0.4s;
 }
 
@@ -68,7 +160,7 @@ p {
 }
 
 .headingp1,.headingp2{
-	font-family:UniSansHeavyCaps;
+	font-family:UniSansHeavyCaps, Arial;
 	position:absolute;
 	display:block;
 	width:50%;
@@ -123,10 +215,9 @@ button:active {
 #image-container {
 	margin:10%;
 }
-
 img {
-	width:100%;
-	border:2px solid black;
+	display:block;
+	margin:auto;
 	transition:0.2s;
 }
 
@@ -134,7 +225,7 @@ img {
 	position:relative;
 	display:inline-block;
 	width:47%;
-	margin:1% 1%;
+
 }
 
 .image-text :not(Img){
@@ -145,6 +236,10 @@ img {
 	width:100%;
 	z-index:5;
 	opacity:0;
+}
+
+.image-text img {
+	width:100%;
 }
 
 h3 {
@@ -169,4 +264,13 @@ h2 {
 
 #Nav:hover {
 	opacity:1;
+}
+
+.logo {
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	transition:0.2;
 }
