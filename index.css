@@ -169,6 +169,7 @@ p {
 	opacity:0.8;
 	transition:1s;
 	color:white;
+	word-wrap: break-word;
 
 }
 
