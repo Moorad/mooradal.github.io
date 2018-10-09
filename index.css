@@ -127,6 +127,7 @@ ul {
 	z-index:5;
 	transition:0.3s;
 	transition-timing-function: ease-out;
+	box-shadow:0 0 20px rgba(0,0,0,0.8);
 }
 
 li {
@@ -165,8 +166,9 @@ p {
 	left:50%;
 	top:37%;
 	transform: translate(-50%, -50%);
-	opacity:0.6;
+	opacity:0.8;
 	transition:1s;
+	color:white;
 
 }
 
